@@ -1,0 +1,12 @@
+"shift + d" - Launches discord
+"shift + f" - Launches firefox
+"shift + e" - Launches emacs
+"shift + v" - Launches vlc
+"shift + s" - Launches steam
+normal volume and lcd backlight controls
+"alt + shift + enter" - Launches terminal
+"alt + j" - Cycles to more recently started app
+"alt + k" - Cycles to older app
+"alt + (1-9)" - Sends you to workspace of the number you selected
+"alt + shift + (1-9) - Sends current window to workspace of the number you selected
+"alt + p" - App menu
