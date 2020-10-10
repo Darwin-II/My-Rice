@@ -1,0 +1,21 @@
+diff a/x.c b/x.c	(rejected hunks)
+@@ -731,7 +747,7 @@ xloadcols(void)
+ 	static int loaded;
+ 	Color *cp;
+ 
+-	dc.collen = MAX(LEN(colorname), 256);
++	dc.collen = MAX(LEN(colorname), LEN(altcolorname));
+ 	dc.col = xmalloc(dc.collen * sizeof(Color));
+ 
+ 	if (loaded) {
+@@ -741,8 +757,8 @@ xloadcols(void)
+ 
+ 	for (i = 0; i < dc.collen; i++)
+ 		if (!xloadcolor(i, NULL, &dc.col[i])) {
+-			if (colorname[i])
+-				die("Could not allocate color '%s'\n", colorname[i]);
++			if (getcolorname(i))
++				die("Could not allocate color '%s'\n", getcolorname(i));
+ 			else
+ 				die("Could not allocate color %d\n", i);
+ 		}
