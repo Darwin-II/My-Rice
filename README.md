@@ -9,3 +9,5 @@ Dependencies:
 xbindkeys
 
 fish (if you wish to use my fish config)
+
+dmenu
